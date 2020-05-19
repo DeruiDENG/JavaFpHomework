@@ -1,0 +1,7 @@
+money:
+  tax:
+    rate: 0.1
+  discount:
+    rate: 0.1
+    threshold: 100
+
