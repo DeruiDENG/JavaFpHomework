@@ -35,5 +35,10 @@ public class MoneyApplication implements CommandLineRunner {
         result = fpApplication.calculate(originalPrice);
         System.out.println("Input:" + originalPrice);
         System.out.println("Output:" + result); // should be 99
+
+        originalPrice = new BigDecimal(95);
+        result = fpApplication.calculate(originalPrice);
+        System.out.println("Input:" + originalPrice);
+        System.out.println("Output:" + result); // should be 104.5
     }
 }

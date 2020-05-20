@@ -2,6 +2,6 @@ money:
   tax:
     rate: 0.1
   discount:
-    rate: 0.1
+    rate: 0.2
     threshold: 100
 

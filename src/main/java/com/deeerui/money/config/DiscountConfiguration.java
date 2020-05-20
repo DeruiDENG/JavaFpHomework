@@ -3,21 +3,23 @@ package com.deeerui.money.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.ConstructorBinding;
 
+import java.math.BigDecimal;
+
 @ConstructorBinding
 @ConfigurationProperties("money.discount")
 public class DiscountConfiguration {
-    private final double rate;
-    private final double threshold;
+    private final BigDecimal rate;
+    private final BigDecimal threshold;
 
-    public double getRate() {
+    public BigDecimal getRate() {
         return rate;
     }
 
-    public double getThreshold() {
+    public BigDecimal getThreshold() {
         return threshold;
     }
 
-    public DiscountConfiguration(double rate, double threshold) {
+    public DiscountConfiguration(BigDecimal rate, BigDecimal threshold) {
         this.rate = rate;
         this.threshold = threshold;
     }
